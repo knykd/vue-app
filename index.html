@@ -9,9 +9,22 @@
   <body>
     <h1>TODO APP</h1>
     <div id="app">
-      <input type="text" v-model="message" />
-      <textarea v-model="message"></textarea>
-      <p>{{ message }}</p>
+      <div class="new-todo">
+        <div class="new-todo-item">
+          <label for="new-todo-title">title</label>
+          <input v-model="todoTitle" type="text" id="new-todo-title" />
+        </div>
+      </div>
+      <div class="new-todo-item">
+        <label for="new-todo-description">description</label>
+        <textarea v-model="todoDescription" id="new-todo-description"></textarea>
+      </div>
+      <div class="todo-search">
+        <div class="todo-search-item">
+          <label for="todo-search-keyword">search keyword</label>
+          <input v-model="searchWord" type="text" id="todo-search-keyword" />
+        </div>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
