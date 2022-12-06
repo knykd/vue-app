@@ -1,7 +1,9 @@
 Vue.createApp({
   data: function(){
     return {
-      message: 'TODO APP',
+      todoTitle: '',
+      todoDescription: '',
+      searchWord: '',
     }
   },
 }).mount('#app')
