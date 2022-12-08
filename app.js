@@ -3,6 +3,8 @@ Vue.createApp({
     return {
       todoTitle: '',
       todoDescription: '',
+      todoCategory: [],
+      hideDoneTodo: false,
       searchWord: '',
     }
   },
