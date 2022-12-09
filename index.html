@@ -26,6 +26,12 @@
           </label>
         </div>
         <div class="todo-search-item">
+          <select v-model="order">
+            <option value="desc">昇順</option>
+            <option value="asc">降順</option>
+          </select>
+        </div>
+        <div class="todo-search-item">
           <label for="todo-search-keyword">キーワードで検索</label>
           <input v-model="searchWord" type="text" id="todo-search-keyword" />
         </div>
